@@ -16,7 +16,7 @@ public class ExplicitWait {
 		driver.get("http://www.itgeared.com/demo/1506-ajax-loading.html");
 		driver.findElement(By.linkText("Click to load get data via Ajax!")).click();
 		WebDriverWait d =new WebDriverWait(driver, 30);
-		d.until(ExpectedConditions.invisibilityOf(driver.findElement(By.id("loader"))));
+		d.until(ExpectedConditions.invisibilityOf(driver.findElement(By.id("loader"))));//wait unit element is not visible.
 		System.out.println(driver.findElement(By.id("results")).getText());
 		
 		

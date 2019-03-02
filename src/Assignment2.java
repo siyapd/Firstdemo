@@ -12,8 +12,8 @@ WebDriver driver;
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "E:\\java\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize(); //maximize window
+		driver.manage().deleteAllCookies();//delete cookies
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.get("https://www.cleartrip.com/");
