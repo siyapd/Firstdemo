@@ -41,7 +41,7 @@ public class AutoSuggestDropDown {
 				break;
 			}
 			if (i > 10) {
-				System.out.println("Element not found");
+				System.out.println("Elements not found");
 			} else {
 				System.out.println("Element  found");
 			}
